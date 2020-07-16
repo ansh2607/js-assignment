@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3</title>
+    <h3>Solution 3 (Day 3)</h3>
+</head>
+<body>
+    <h3>Taking marks obtained as input and grading it:</h3>
+    <script>
+        let inp = prompt('Enter marks obtained:');
+        let check = inp > 100 ? false : true;
+        let grade = inp >= 80 ? 'A' : inp >= 50 ? 'B' : inp >= 30 ? 'C' : 'D';
+        if (check) {
+            console.log(`Marks are ${inp} and grade is ${grade}`);
+        } else {
+            console.log('Maximum marks cannot exceed 100');
+        }
+    </script>
+</body>
+</html>
