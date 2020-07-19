@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment 7</title>
+    <h3>Solution 7 (Day 4)</h3>
+</head>
+<body>
+    <h3>Finding prime numbers in the interval from 2 to n.</h3>
+    <script>
+        n = parseFloat(prompt('Enter value of n:'));
+        for (let i = 2; i <= n; i++) {
+            let checkPrime = true;
+            for (let j = 2; j <= i; j++) {
+                if(i%j === 0 && i !== j) {
+                    checkPrime = false;
+                }
+            }
+            if (checkPrime === true) {
+                console.log(i);
+            }
+        }
+    </script>
+</body>
+</html>

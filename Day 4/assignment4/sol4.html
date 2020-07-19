@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 4</title>
+    <h3>Solution 4 (Day 4)</h3>
+</head>
+<body>
+    <h1><mark>Calculator</mark></h1>
+    <div style="border: 2px yellowgreen outset; padding: 10px;">
+    Enter first number: <input type = 'text' id = 'num1'> <br>
+    <br>
+    Enter second number: <input type = 'text' id = 'num2'> <br>
+    <br>
+    <select id = 'operations'>
+        <option value = '+'>+</option>
+        <option value = '-'>-</option>
+        <option value = 'x'>x</option>
+        <option value = '/'>/</option>
+        <option value = '%'>%</option>
+        <option value = 'sqrt'>sqrt(1st num)</option>
+    </select> &nbsp;&nbsp;
+    <button value="=" onclick="calc()">=</button> <br>
+    <br>
+    Solution: <input type = 'text' id = 'result'>
+    </div>
+    <script src="calc.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 6</title>
+    <h3>Solution 6 (Day 4)</h3>
+</head>
+<body>
+    <h3>Asking for an input greater than 100</h3>
+    <script defer>
+        let bool = true;
+        while(bool){
+            let val = parseFloat(prompt('Enter a number greater than 100:'));
+            if (val > 100) {
+                bool = false;
+                break;
+            } else if (val <= 100 && val === NaN) {
+                val = parseFloat(prompt('Enter a number greater than 100:'));
+            }
+        }
+    </script>
+</body>
+</html>
