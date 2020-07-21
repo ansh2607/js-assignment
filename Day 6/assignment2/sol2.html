@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2</title>
+    <h3>Solution 2 (Day 6)</h3>
+</head>
+<body>
+    <h3>Write a program that will display the multiplication table of a number on the webpage in a proper
+        format. Take the input from the user.</h3>
+    <p><input type="text" id="num" placeholder="Enter number"/></p>
+    <button onclick='printTable()'>Print Table</button>
+    <p id="table"></p>
+    <script>
+        function printTable() {
+            let num=Number(document.getElementById('num').value);
+            let tableTag = document.getElementById('table');
+            tableTag.innerHTML = '';
+            for (let i=1; i<= 10; i++) {
+                tableTag.innerHTML += `${num} x ${i} = ${num*i}` + '<br>'
+            }
+        }   
+    </script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+#background.dark {
+    background-color: black;
+    color: white;
+}
+
+#clock {
+    border: 5px solid red; 
+    padding: 50px; 
+    margin-left: 200px; 
+    margin-right: 200px; 
+    text-align: center;
+}
