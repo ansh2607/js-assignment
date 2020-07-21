@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1</title>
+    <h3>Solution 1 (Day 5)</h3>
+</head>
+<body>
+    <h3>
+        Write a program which does the following things:<br>
+        1. Takes a positive number from the user.<br>
+        2. Makes an array of numbers till the number given by user<br>
+        3. Use higher order function to filter the odd numbers<br>
+        4. Generate and array of the cubes of the filtered numbers<br>
+    </h3>
+    <script>
+        let n = parseInt(prompt('Enter the size of Array:'));
+        let inputArr = [];
+        for (let i = 0; i < n; i++) {
+            inputArr[i] = parseFloat(prompt('Enter the positive number' + (i+1)));
+        }
+        console.log(inputArr);
+        let finalArr = inputArr.filter(el => el % 2 !== 0).map((el) => el ** 3);
+        console.log(finalArr);
+    </script>
+</body>
+</html>

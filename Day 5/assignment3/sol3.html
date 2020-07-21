@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3</title>
+    <h3>Solution 3 (Day 5)</h3>
+</head>
+<body>
+    <h3>Using promises/async await/fetch get the random todos from the json placeholder api. And log all the
+        completed todos to the console.</h3>
+    <script>
+        async function getRequest(url) {
+            let data = await(await(fetch(url)
+                .then(response=>response.json())
+                .catch(err=>console.log('Error:', err))
+            ));
+            let finalData = data.map(el => {
+                if (el['completed'] === true) {
+                    return el;
+                } else {
+                    return 'not completed';
+                }
+            });
+            console.log(finalData)
+        }
+        getRequest('https://jsonplaceholder.typicode.com/todos');
+    </script>
+</body>
+</html>
