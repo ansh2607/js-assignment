@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600" rel="stylesheet" type="text/css">
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <title>To do List</title>
+</head>
+<body>
+    <div class="top">
+        <div class="clear">
+            <i class="ion-ios-refresh" aria-hidden="true"></i>
+        </div>
+        <div id="date"></div>
+    </div>
+    <div class="bottom">
+        <div class="add">
+            <div class="add__container">
+                <input type="text" class="add__description" id="input" placeholder="Add To-Do item">
+                <button class="add__btn"><i class="ion-ios-plus-outline"></i></button>
+            </div>
+        </div>
+        <div class="content">
+            <ul class="lists" id="list">
+                <!-- <li class='item'> 
+                    <p class='item__description'> Make the project </p> 
+                    <i class='ion-ios-close-outline' class="item__delete--btn" job='delete' id=0></i>
+                </li> -->
+            </ul>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

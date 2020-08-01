@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #555;
+    font-family: Open Sans;
+    font-size: 16px;
+    position: relative;
+    height: 100vh;
+    font-weight: 400;
+}
+
+.top {
+    height: 40vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(to-do_template.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.clear {
+    float: right;
+    color: #28B9B5;
+    font-size: 35px;
+    margin-right: 10px;
+}
+
+.clear:active {transform: translateY(2px);}
+
+#date {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #fff;
+    font-size: 25px;
+    font-family: 'Titillium Web', sans-serif;
+    background-color: #28B9B5;
+}
+
+.add {
+    padding: 14px;
+    border-bottom: 1px solid #e7e7e7;
+    background-color: #f7f7f7;
+}
+.add__container {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.add__description { 
+    width: 400px;
+    border: 1px solid #e7e7e7;
+    background-color: #fff;
+    color: inherit;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 12px 15px;
+    margin-right: 10px;
+    border-radius: 5px;
+    transition: border 0.3s;
+}
+
+.add__btn {
+    font-size: 35px;
+    background: none;
+    border: none;
+    color: #28B9B5;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.1;
+    margin-left: 10px;
+}
+
+.add__description:focus {
+    outline: none;
+    border: 1px solid #28B9B5;
+}
+
+.add__btn:focus { outline: none; }
+
+.content {
+    float: left;
+    width: 475px;
+    margin-right: 50px;
+    margin-left: 400px;
+}
+
+
+.item {
+    padding: 13px;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.item:first-child { border-top: 1px solid #e7e7e7; }
+.item:nth-child(even) { background-color: #f7f7f7; }
+
+.item__description {
+    float: left;
+}
+
+.ion-ios-close-outline.item__delete--btn {
+    color: #28B9B5;
+    font-size: 22px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+    display: none;
+}
+.ion-ios-close-outline.item__delete--btn:focus { outline: none; }
+.item__delete--btn:active { transform: translateY(2px); }
+.item:hover .item__delete--btn { 
+    display: block;
+    float: right;
+ }
